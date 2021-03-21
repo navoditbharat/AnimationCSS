@@ -1,0 +1,31 @@
+div{
+    height: 100px;
+    width: 100px;
+    border: 10px solid black;
+    border-top: 10px solid lightblue;
+    border-right: 10px solid lightcoral;
+    border-bottom: 10px solid lightgreen;
+    border-left: 10px solid lightslategray;
+    background-color: teal;
+    border-radius: 50%;
+    animation-name: loader;
+    animation-duration: 500ms;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count: infinite;
+    /* animation-fill-mode: forwards; */
+    /* animation-direction: alternate; */
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@keyframes loader{
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
